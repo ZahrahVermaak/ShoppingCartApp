@@ -18,8 +18,8 @@ namespace ShoppingLibrary
             _itemName = itemName;
             _price = price; 
             //_price = 0;
-
         }
+
 
 
         //getPrice++;
