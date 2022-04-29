@@ -5,15 +5,21 @@ namespace ShoppingLibrary
 {
     public class ShoppingCart
     {
+        protected string _shoppingItem;
         private static int Getpriceofitems;
-      //  List<ShoppingCartItem> _items = new List<ShoppingCartItem>();
-
-        //ShoppingCart cart = new ShoppingCart();
-        // var item = new ShoppingCartItem("Shoes", 999);
-       //cart.Add(item);
-
-       
+        private static string GetShopppingItems;
         private int _price;
+        List<ShoppingCartItem> _items = new List<ShoppingCartItem>();
+
+        public ShoppingCart()
+        {
+
+        }
+
+       public void AddItems(ShoppingCartItem item)
+        {
+            _items.Add(item);   
+        }
 
         public int GetpriceOfItems()
         {
@@ -23,12 +29,19 @@ namespace ShoppingLibrary
         {
             return _price * 115;
         }
+        public string GetShoppingItems()
+        {
+            return GetShoppingItems();
+        }
 
 
 
+    }
 
 
-
+        //ShoppingCart cart = new ShoppingCart();
+        // var item = new ShoppingCartItem("Shoes", 999);
+        //cart.Add(item);
         /* public ShoppingCart()
          {
              Shoes shoes = new Shoes("Nike runner", 999);
@@ -49,7 +62,7 @@ namespace ShoppingLibrary
 
 
         // other option is to use the get and set method
-    }
-
     
+
+
 }

@@ -6,28 +6,68 @@ namespace ShoppingAppCart
 {
     internal class Program
     {
+
         static void Main(string[] args)
         {
-            List<ShoppingCartItem> _items = new List<ShoppingCartItem>();
+            //List<ShoppingCartItem> _items = new List<ShoppingCartItem>();
 
             ShoppingCart shoppingcart = new ShoppingCart();
 
             var item = new ShoppingCartItem("Nike runner", 999);
-            //shoppingcart.Add(item);
+            shoppingcart.AddItems(item);
+            Console.WriteLine(item._itemName + " " + " - " + "R" + item._price);
 
             item = new ShoppingCartItem("Sunfoil cooking oil", 169);
-            //shoppingcart.Add(item);
+            shoppingcart.AddItems(item);
+            Console.WriteLine(item._itemName + " " + " - " + "R" + item._price);
 
             item = new ShoppingCartItem("SamsungLaptop", 3499);
-            //shoppingcart.Add(item);
+            shoppingcart.AddItems(item);
+            Console.WriteLine(item._itemName + " " + " - " + "R" + item._price);
 
             item = new ShoppingCartItem("Evil Eye Necklace", 50);
-            //shoppingcart.Add(item);
+            shoppingcart.AddItems(item);
+            Console.WriteLine(item._itemName + " " + " - " + "R" + item._price);
 
             item = new ShoppingCartItem("Chocolate Cake", 349);
-            //shoppingcart.Add(item);
+            shoppingcart.AddItems(item);
+            Console.WriteLine(item._itemName + " " + " - " + "R" + item._price);
 
-        }
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }  
+            // Console.WriteLine(item._price);
+
+            //Console.WriteLine("Items: " + ShoppingCartItem());
+        
 
             /* Shoes shoes = new Shoes("Nike runner", 999);
              _items.Add(shoes);

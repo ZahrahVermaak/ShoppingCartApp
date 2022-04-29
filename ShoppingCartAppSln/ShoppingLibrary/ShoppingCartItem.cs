@@ -9,7 +9,7 @@ namespace ShoppingLibrary
     public class ShoppingCartItem
     {
         public double _price;
-        protected string _itemName;
+        public string _itemName;
         //public int _addPrices;
         //private object _shoppingCartitems;
 
@@ -17,24 +17,23 @@ namespace ShoppingLibrary
         {
             _itemName = itemName;
             _price = price; 
-            _price = 0;
+            //_price = 0;
 
-            //getPrice++;
         }
 
-        
 
-       /* public void AddShoppingItem(ShoppingCartItem item)
-        {
-            _shoppingCartitems.Add(item);
-        }*/
-         //_price = _price;
-        
+        //getPrice++;
+        /* public void AddShoppingItem(ShoppingCartItem item)
+         {
+             _shoppingCartitems.Add(item);
+         }*/
+        //_price = _price;
+
     }
-    
-    
-    
 
-   
+
+
+
+
 
 }
