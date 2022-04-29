@@ -9,6 +9,7 @@ namespace ShoppingLibrary
         private static int Getpriceofitems;
         private static string GetShopppingItems;
         private int _price;
+       // public virtual double Price;
         List<ShoppingCartItem> _items = new List<ShoppingCartItem>();
 
         public ShoppingCart()
@@ -17,9 +18,15 @@ namespace ShoppingLibrary
         }
 
        public void AddItems(ShoppingCartItem item)
-        {
+       {
             _items.Add(item);   
-        }
+       }
+
+       public string GetShoppingItems()
+       {
+            return GetShoppingItems();
+       }
+
 
         public int GetpriceOfItems()
         {
@@ -29,10 +36,15 @@ namespace ShoppingLibrary
         {
             return _price * 115;
         }
-        public string GetShoppingItems()
+
+        public void SubTotal()
         {
-            return GetShoppingItems();
+            foreach (ShoppingCartItem item in _items)
+            {
+                Console.WriteLine(item._itemName);
+            }
         }
+
 
 
 

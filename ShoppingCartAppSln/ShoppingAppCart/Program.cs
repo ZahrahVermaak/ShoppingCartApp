@@ -33,37 +33,13 @@ namespace ShoppingAppCart
             shoppingcart.AddItems(item);
             Console.WriteLine(item._itemName + " " + " - " + "R" + item._price);
 
+           
 
+            //Console.WriteLine();
             
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         }  
+
+
             // Console.WriteLine(item._price);
 
             //Console.WriteLine("Items: " + ShoppingCartItem());
