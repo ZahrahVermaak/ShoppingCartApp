@@ -17,7 +17,7 @@ namespace ShoppingAppCart
             shoppingcart.AddItems(item);
            // Console.WriteLine(item._itemName + " " + " - " + "R" + item._price);
 
-            item = new ShoppingCartItem("Sunfoil cooking oil", 169);
+            item = new ShoppingCartItem("Cooking oil", 169);
             shoppingcart.AddItems(item);
            // Console.WriteLine(item._itemName + " " + " - " + "R" + item._price);
 
@@ -25,7 +25,7 @@ namespace ShoppingAppCart
             shoppingcart.AddItems(item);
             //Console.WriteLine(item._itemName + " " + " - " + "R" + item._price);
 
-            item = new ShoppingCartItem("Evil Eye Necklace", 50);
+            item = new ShoppingCartItem("Necklace", 50);
             shoppingcart.AddItems(item);
             //Console.WriteLine(item._itemName + " " + " - " + "R" + item._price);
 
@@ -33,14 +33,14 @@ namespace ShoppingAppCart
             shoppingcart.AddItems(item);
             // Console.WriteLine(item._itemName + " " + " - " + "R" + item._price);
 
-            List<ShoppingCartItem> _items = new List<ShoppingCartItem>();
+            List<ShoppingCartItem> ShoppingCartItems = shoppingcart.MyCartItems();
 
-            foreach(ShoppingCartItem shoppingCartItem in _items)
+            foreach(ShoppingCartItem shoppingCartItem in ShoppingCartItems)
             {
-                Console.WriteLine(_ = shoppingCartItem._itemName + shoppingCartItem._price);
+                Console.WriteLine(_ = shoppingCartItem._itemName +"\t\t\t\t"+ "R"+ shoppingCartItem._price);
             }
-            Console.WriteLine("SubTotal - ",++item._price);
-            Console.WriteLine("VATAdded - ", ++item._price);
+            Console.WriteLine("SubTotal - "+ "\t\t\t\t"+"R" + shoppingcart.GetSubTotal());
+            Console.WriteLine("VATAdded - " + "\t\t\t\t" + "R" + shoppingcart.VATAdded());
            
 
         }  

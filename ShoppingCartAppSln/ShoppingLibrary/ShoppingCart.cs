@@ -9,9 +9,10 @@ namespace ShoppingLibrary
         private static int Getpriceofitems;
         private static string GetShopppingItems;
         private int _price;
+        private double _vat = 1.15;
         
         List<ShoppingCartItem> _items = new List<ShoppingCartItem>();
-        private double _vat;
+        //private double _vat;
 
         public ShoppingCart()
         {
@@ -45,6 +46,10 @@ namespace ShoppingLibrary
             return Math.Round(total * _vat, 2);
             
        }
+        public List<ShoppingCartItem> MyCartItems()
+        {
+            return _items;
+        }
 
 
 
